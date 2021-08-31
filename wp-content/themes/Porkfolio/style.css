@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*
+Theme Name: Porkfolio
+Theme URI: https://wordpress.org/themes/Porkfolio/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Version: 1.9
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Porkfolio
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready, block-patterns
+
+--------------------------------------------------------------*/
+/*
+ * Chrome renders extra-wide &nbsp; characters for the Hoefler Text font.
+ * This results in a jumping cursor when typing in both the Classic and block
+ * editors. The following font-face override fixes the issue by manually inserting
+ * a custom font that includes just a Hoefler Text space replacement for that
+ * character instead.
+ */
+html {
+  scroll-behavior: smooth;
+  margin: 0; }
+
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+  outline: none;
+  box-sizing: content-box;
+  font-family: "Raleway";
+  background: url(../Porkfolio/images/background.png)
+  /* url(../Porkfolio/img/background.png) */ no-repeat;
+  background-size: cover; }
+
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 5px;
+  /* ширина для вертикального скролла */
+  height: 4px;
+  /* высота для горизонтального скролла */
+  background-color: transparent; }
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #1F4F54;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861; }
+
+li {
+  list-style: none; }
+
+img {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.container {
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex; }
+
+.btn {
+  background: linear-gradient(90deg, #4EC5D3 14.5%, #93D4DB 81.71%);
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  color: white;
+  padding: 10px 35px;
+  transition: 1s;
+  cursor: pointer; }
+  .btn:hover {
+    opacity: 0.7;
+    transition: 1s;
+    color: #fff; }
+
+header .container {
+  padding-top: 20px;
+  position: relative;
+  justify-content: space-between; }
+  header .container::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    border-bottom: 1px solid rgba(207, 199, 199, 0.4); }
+  header .container .header__logo {
+    display: flex;
+    align-items: baseline; }
+    header .container .header__logo img{
+      width: 50px;
+    }
+    header .container .header__logo h2 {
+      font-family: 'Cookie';
+      font-size: 36px;
+      margin: 10px 0 -10px; }
+  header .container .header-nav nav {
+    position: relative;
+    top: 50%; }
+    header .container .header-nav nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0; }
+      header .container .header-nav nav ul li {
+        font-family: "Raleway";
+        font-size: 20px;
+        margin: 0 25px;
+        height: 32px;
+        transition: 0.7s; }
+        header .container .header-nav nav ul li a {
+          text-decoration: none;
+          color: #000; }
+        header .container .header-nav nav ul li:first-child {
+          margin-left: 0; }
+        header .container .header-nav nav ul li:hover {
+          opacity: 0.7; }
+      header .container .header-nav nav ul .active {
+        border-bottom: 2px solid #4EC5D3; }
+        header .container .header-nav nav ul .active a {
+          color: #4EC5D3; }
+
+main {
+  margin-bottom: 50px; }
+  main .container .main-wrap {
+    flex-direction: column;
+    width: 100%; }
+    main .container .main-wrap .main-title {
+      text-align: center;
+      border-bottom: 1px solid rgba(207, 199, 199, 0.4); }
+      main .container .main-wrap .main-title h2 {
+        font-size: 26px; }
+        main .container .main-wrap .main-title h2 span {
+          display: none; }
+    main .container .main-wrap .main-promo {
+      margin-top: 25px;
+      background-color: rgba(207, 199, 199, 0.15);
+      height: 475px;
+      border: none;
+      border-radius: 5px; }
+      main .container .main-wrap .main-promo .promo__image {
+        float: left;
+        width: 60%;
+        height: 350px; }
+        main .container .main-wrap .main-promo .promo__image .promo__animate {
+          position: relative; }
+          main .container .main-wrap .main-promo .promo__image .promo__animate img {
+            position: absolute; }
+          main .container .main-wrap .main-promo .promo__image .promo__animate .mackbook {
+            top: 40px;
+            left: 70px; }
+          main .container .main-wrap .main-promo .promo__image .promo__animate .ipad {
+            left: 60%;
+            top: 160px; }
+          main .container .main-wrap .main-promo .promo__image .promo__animate .iphone12 {
+            top: 230px;
+            left: 10%; }
+      main .container .main-wrap .main-promo .promo__offer {
+        float: right;
+        position: relative;
+        width: 40%;
+        margin-top: 100px;
+      }
+        main .container .main-wrap .main-promo .promo__offer h1 {
+          font-size: 28px;
+          padding: 20px;
+         }
+        main .container .main-wrap .main-promo .promo__offer .wrap__btn{
+          position: relative;
+          right: -100px;
+          top: 40px;
+        }
+        main .container .main-wrap .main-promo .promo__offer a {
+          outline: none;
+          position: relative;
+          color: white;
+          text-decoration: none;
+          padding-left: 25px;
+          left: 15%;
+          background: linear-gradient(90deg, #4EC5D3 81.7%, #93D4DB 14.5%); }
+          main .container .main-wrap .main-promo .promo__offer a svg {
+            width: 20px;
+            position: relative;
+            bottom: -3px;
+            right: -18px; }
+          main .container .main-wrap .main-promo .promo__offer a:hover {
+            background: linear-gradient(90deg, #4EC5D3 14.5%, #93D4DB 81.71%); }
+  main .container .main-options {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+   }
+    main .container .main-options .options__item {
+      width: 30%;
+      margin: 0 70px;
+      padding: 20px 20px 45px;
+      position: relative;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(207, 199, 199, 0.15); }
+      main .container .main-options .options__item img {
+        display: block;
+        margin: 0 auto;
+        text-align: center; }
+      main .container .main-options .options__item p {
+        max-width: 200px;
+        margin-top: 0;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 30px;
+        margin: 0 auto; }
+      main .container .main-options .options__item a {
+        position: absolute;
+        text-align: left;
+        font-size: 18px;
+        top: 215px;
+        right: -20px;
+        padding: 5px 20px; }
+        main .container .main-options .options__item a svg {
+          position: relative;
+          bottom: -4px;
+          right: -5px;
+          width: 15px; }
+      main .container .main-options .options__item:first-child {
+        margin-left: 0; }
+      main .container .main-options .options__item:last-child {
+        margin-right: 0; }
+
+footer {
+  padding: 25px 0 40px;
+  background-color: #1F4F54; }
+  footer .container {
+    display: block; }
+    footer .container .footer-wrap {
+      width: 100%; }
+      footer .container .footer-wrap .footer-link {
+        display: flex;
+        justify-content: center; }
+        footer .container .footer-wrap .footer-link ul {
+          display: flex;
+          align-items: center; }
+          footer .container .footer-wrap .footer-link ul li {
+            padding: 0 6px; }
+            footer .container .footer-wrap .footer-link ul li a{
+              font-size: 20px;
+              color: white;
+            }
+          footer .container .footer-wrap .footer-link ul:first-child {
+            padding-left: 0; }
+          footer .container .footer-wrap .footer-link ul:last-child {
+            padding-right: 0; }
+      footer .container .footer-wrap .footer-nav {
+        display: flex;
+        position: relative;
+        justify-content: center; }
+        footer .container .footer-wrap .footer-nav ul {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0; 
+          padding: 0;}
+          footer .container .footer-wrap .footer-nav ul li {
+            font-family: "Raleway";
+            font-size: 20px;
+            margin: 0 25px;
+            height: 32px;
+            transition: 0.7s; }
+            footer .container .footer-wrap .footer-nav ul li a {
+              text-decoration: none;
+              color: #fff; }
+            footer .container .footer-wrap .footer-nav ul li:first-child {
+              margin-left: 0; }
+              footer .container .footer-wrap .footer-nav ul li:last-child {
+                margin-right: 0; }
+            footer .container .footer-wrap .footer-nav ul li:hover {
+              opacity: 0.7; }
+          footer .container .footer-wrap .footer-nav ul .active {
+            border-bottom: 2px solid #4EC5D3; }
+            footer .container .footer-wrap .footer-nav ul .active a {
+              color: #4EC5D3; }
+          footer .container .footer-wrap .footer-nav ul::after {
+            content: " ";
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+            border-bottom: 1px solid rgba(207, 199, 199, 0.4);
+          }
+        
+header nav .menu-navigation-container ul li.current_page_item {
+  border-bottom: 2px solid #4EC5D3;
+  }
+header nav .menu-navigation-container ul li.current_page_item a{
+  color: #4EC5D3;
+}
+        
+footer .footer-nav .menu-navigation-container ul li.current_page_item {
+  border-bottom: 2px solid #4EC5D3;
+  }
+footer .footer-nav .menu-navigation-container ul li.current_page_item a{
+  color: #4EC5D3;
+}

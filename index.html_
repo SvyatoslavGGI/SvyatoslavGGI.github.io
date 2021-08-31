@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EasyGarden</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="/img/favicon.ico">
+        <!-- Libs -->
+        <meta name="yandex-verification" content="55cfb180bf6f8a94" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--<script src="lib/bootstrap.min.js"></script> -->    
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header_items">
+                    <div class="row">
+                        
+                        <div class="col-5">
+                            <div class="header_item"> 
+                                <img src="img/battery.png" alt="">
+                                <p><span>Работает 8 часов</span><br> на одном заряде</p>
+                                </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="header_item">
+                                <img src="img/medal.png" alt="">
+                                <p><span>Гарантия</span><br> на товар 3 года</p>
+                            </div>
+                        </div>
+                        <div class="col-2 eco">
+                            <img src="img/eco.png" alt="Эко">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main_title">
+                <h1>Easy Garden</h1>
+                <p>Сделайте работу<br> в саду легкой!</p>
+            </div>
+            <img class="main-product" src="img/main_product.png" alt="">
+            <img class="main-medal" src="img/medal-approved.png" alt="">
+            <img class="main_discount-image" src="img/discount.png" alt="">
+            <div class="main-discount">
+                <h3>Скидка 50%</h3>
+            </div>
+        </main>
+        <div class="accomplishments">
+            <div class="accomplishments_item">
+                <img class="accomplishements_icon" src="../img/grass_icon.png" alt="">
+                <p>Ускоряет работу в саду в 2 раза</p>
+            </div>
+            <div class="accomplishments_item">
+                <img class="accomplishements_icon" src="../img/cargo_icon.png" alt="">
+                <p>Сила сжатия - 300 кг 1 кнопкой</p>
+            </div>
+            <div class="accomplishments_item">
+                <img class="accomplishements_icon" src="../img/like_icon.png" alt="">
+                <p>Ваш незаминимый помощник!</p>
+            </div>
+        </div> 
+        <div class="form">
+            <div>
+                <p><span class="form_limit-text"><b>14</b> шт.</span> осталось по акции!</p>
+            </div>
+            <div class="timer">
+                <div class="form_discount-timer">
+                    <p>Акция закончится через:</p>
+                </div>
+                <div  id="countdown" class="countdown">
+                    <div class="countdown-number">
+                        <span class="hours countdown-time"></span>
+                        <span class="countdown-text">Часов</span>
+                    </div>
+                    <div class="countdown-number countdown-center">
+                        <span class="minutes countdown-time"></span>
+                        <span class="countdown-text">Минут</span>
+                    </div>
+                    <div class="countdown-number">
+                        <span class="seconds countdown-time"></span>
+                        <span class="countdown-text">Секунд</span>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="container">
+                        <div class="row">
+                            <div class="old-price col-6">
+                                <div class="price-wrapper">
+                                    <span class="price-title">обычная цена:</span>
+                                    <span class="price-value">3100Р</span>
+                                </div>
+                            </div>
+                            <div class="new-price col-5">
+                                <div class="price-wrapper">
+                                    <span class="price-title">цена по акции:</span>
+                                    <span class="price-value">1550р</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accomplishments-button">
+                <div class="wrapper-button">
+                    <a href="#" class="button-order">
+                        Заказать со скидкой
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="problems">
+            <div class="problems_wrapper-title">
+                <div class="problems_title">
+                    <h2>Обычные секаторы<br> устарели!</h2>
+                    <img src="img/no_pruner.png" alt="no pruner">
+                </div>
+            </div>
+            <div class="problems-enumeration">
+                <div class="row row-top">
+                    <div class="problems_enumeration-item col-6">
+                        <img src="img/problems_img1.png" alt="">
+                        <p>Постоянные мозоли на руках и боли в кисти. От нагрузок начинает болеть блуждающий нерв в районе большого пальца</p>
+                    </div>
+                    <div class="problems_enumeration-item col-6">
+                        <img src="img/problems_img2.png" alt="">
+                        <p>Механизм с пружиной быстро приходит в негодности.Срок службы стандартных секаторов от 6 до 12 месяцев</p>
+                    </div>
+                </div>
+                <div class="row row-bottom">
+                    <div class="problems_enumeration-item col-6">
+                        <img src="img/problems_img3.png" alt="">
+                        <p>Обычный секатор часто жует то, что вы пытаетесь им перекусить</p>
+                    </div>
+                    <div class="problems_enumeration-item col-6">
+                        <img src="img/problems_img4.png" alt="">
+                        <p>Не рассчитан на побеги разного диаметра. Допустимая разница в диаметре 4-7 мм</p>
+                    </div>
+                </div>
+            </div>
+            <div class="problems-banner">
+                <div class="banner-wrapper">
+                    <h3>Найдено<br> лучшее решение</h3>
+                    <p>Для работы с вашим садом</p>
+                    <img src="img/problems-prod.png" alt="">
+                </div>
+            </div>
+            <div class="problems-solution">
+                <div class="problems_solution-wrapper">
+                    <div class="problems_solution-example">
+                        <img src="img/work-example.gif" alt="">
+                        <h4>Gif</h4>
+                        <p>Easy Garden - <span>выбор зарубежных<br> фермеров!</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+             <h3>Easy Garden это:</h3>
+             <div class="description-feature">
+                <img src="img/description_prod.png" alt="">
+                <div class="description_feature-item description_feature-block1">
+                    <p>Подвижное <br> лезвие</p>
+                </div>
+                <div class="description_feature-item description_feature-block2">
+                    <p>Диаметр <br> 30мм</p>
+                </div>
+                <div class="description_feature-item description_feature-block3">
+                    <p>Статичное<br> лезвие</p>
+                </div>
+                <div class="description_feature-item description_feature-block4">
+                    <p>Включатель </p>
+                </div>
+                <div class="description_feature-item description_feature-block5">
+                    <p>Удобная и <br> нескользящая  <br> рукоятка</p>
+                </div>
+                <div class="description_feature-item description_feature-block6">
+                    <p>Мощный<br> бесщёточный<br> мотор</p>
+                </div>
+                <div class="description_feature-item description_feature-block7">
+                    <p>Переключатель</p>
+                </div>
+                <div class="description_feature-item description_feature-block8">
+                    <p>Крепление<br> для сменной<br> батареи</p>
+                </div>
+                <div class="description_feature-item description_feature-block9">
+                    <p>21V 2.0Ah<br> Литиевая<br> батарея</p>
+                </div>
+             </div>
+             <div class="description-specification">
+                 <div class="description_specification-wrapper">
+                    <h4>Характеристики:</h4>
+                    <div class="description_specification-item">
+                        <span>Мощность:</span>
+                        <p>600 Вт</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Диаметр ножниц:</span>
+                        <p>30 мм</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Вес:</span>
+                        <p>всего 700 грамм</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Время зарядки:</span>
+                        <p>1-1,5 часа</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Материал корпуса:</span>
+                        <p>ABS</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Лезвия:</span>
+                        <p>высокоуглеродистая сталь SK5</p>
+                    </div>
+                    <div class="description_specification-item">
+                        <span>Время работы от 1 батареи:</span>
+                        <p>8 часов!</p>
+                    </div>
+                 </div>
+                 <img src="img/specification-prod.png" alt="">
+             </div>
+            <div class="description-button">
+                <div class="wrapper-button">
+                    <a href="#" class="button-order">
+                        Заказать со скидкой
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="compare">
+            <h3>Сравнение с обычным <br> секатором:</h3>
+            <div class="compare_lists">
+                <div class="regular">
+                    <h5>Обычный секатор</h5>
+                    <img src="img/regular_secateurs.png" alt="">
+                    <div>Лезвие<br> из обычной стали<br> подвержено ржавчине</div>
+                    <div>Требует заточки<br> каждые 2 месяца</div>
+                    <div>Диаметр ножниц<br> любой, но держать<br> становится неудобно</div>
+                    <div>Под каждый тип<br> ствола/стебля нужен<br> свой секатор</div>
+                </div>
+                <div class="our">
+                    <h5>Easy Garden</h5>
+                    <img src="img/our_prod.png" alt="">
+                    <div>Швейцарское<br> лезвие из<br> углродстой стали</div>
+                    <div>Не требует<br> постоянной заточки</div>
+                    <div>Диаметр<br> ножниц - 30 мм</div>
+                    <div>Для любых видов<br> растений за счет<br> специальной заточки</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

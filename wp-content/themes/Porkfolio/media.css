@@ -1,0 +1,65 @@
+@media (max-width:768px){
+    header .container .header-nav nav ul li{
+        font-size: 16px;
+    }
+    main .container .main-wrap .main-promo .promo__offer {
+        width: 100%;
+    }
+    main .container .main-wrap .main-promo .promo__offer h1{
+    text-align: center;
+    }
+    main .container .main-options .options__item{
+        margin: 0 15px;
+    }
+    main .container .main-options .options__item a{
+        right: 20px;
+    }
+}
+@media(min-width:768px){
+    .container{
+        max-width: 750px;
+    }
+    header .container .header-nav nav ul li{
+        font-size: 18px;
+    }
+
+    main .container .main-wrap .main-promo .promo__offer h1{
+    text-align: center;
+    }
+    main .container .main-options .options__item{
+        margin: 0 15px;
+    }
+    main .container .main-options .options__item a{
+        right: 20px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        max-width: 970px;
+    }
+    header nav .menu-navigation-container ul li.current_page_item {
+        border-bottom: 3px solid #4EC5D3;
+    }
+    main .container .main-wrap .main-promo .promo__image .promo__animate .mackbook{
+        width: 80%;
+    }
+    main .container .main-wrap .main-promo .promo__image .promo__animate .ipad{
+        width: 45%;
+    }
+    main .container .main-wrap .main-promo .promo__image .promo__animate .iphone12{
+        width: 15%;
+    }
+    main .container .main-wrap .main-promo .promo__offer .wrap__btn {
+        right: -40px;
+    }
+    main .container .main-options .options__item a{
+
+    }
+}
+
+@media(min-width:1200px){
+    .container{
+        max-width: 1170px;
+    }
+
+}
